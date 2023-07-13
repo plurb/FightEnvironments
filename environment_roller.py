@@ -1,7 +1,7 @@
 import random as rng
 
 
-def fetch_env():
+def generate_location():
     with open("environments.txt") as f:
         envs = f.readlines()
         if envs:
@@ -9,4 +9,4 @@ def fetch_env():
         return env
 
 if __name__ == '__main__':
-    print(fetch_env())
+    print(generate_location())
