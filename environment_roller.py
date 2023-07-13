@@ -2,7 +2,7 @@ import random as rng
 
 
 def generate_location():
-    with open("environments.txt") as f:
+    with open("locations.txt") as f:
         envs = f.readlines()
         if envs:
             env = rng.choice(envs).replace('\n', '')
